@@ -5,6 +5,7 @@
     <script src="js/scripts.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta charset="utf-8">
     <title>Which Language Should I Learn?</title>
   </head>
@@ -42,27 +43,29 @@
             <option value="android">Android</option>
             <option value="ios">iOS</option>
           </select>
-          <div class="radio">
-            <p>Please choose the option that matters most to you:</p>
-            <label>
-            <input type="radio" name="important" value="looks">
-            Things look appealing, they are styled nicely.
-            </label>
+          <div class="radio-type">
+            <div class="radio">
+              <p id="radio-head">Please choose the option that matters most to you:</p>
+              <label>
+              <input type="radio" name="important" value="looks">
+              Things look appealing, they are styled nicely.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="important" value="function">
+              Things function logicaly, the pieces are consistant.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="important" value="flex">
+              The tools used are diverse, and can be used for many things.
+              </label>
+            </div>
           </div>
-          <div class="radio">
-            <label>
-            <input type="radio" name="important" value="function">
-            Things function logicaly, the pieces are consistant.
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-            <input type="radio" name="important" value="flex">
-            The tools used are diverse, and can be used for many things.
-            </label>
-          </div>
-      </div>
-        <button type="submit" class="btn btn-info">Submit</button>
+        </div>
+      <button type="submit" class="btn btn-info">Submit</button>
       </form>
       <div class="answers">
         <div id="design">
@@ -84,8 +87,8 @@
         <div id="conflict">
           <h2>Hmmm</h2>
           <p>Looks like you could pursue a few things! Take a look at this <a href= "https://www.epicodus.com/blog/what-programming-language-should-1i-learn/">Epicodus page</a> to learn more about the different languages and to find out which path might be right for you! We hope to see you soon<span class="your-name"></span>!</p>
+          </div>
         </div>
-      </div>
-    </div> <!--end of container-->
+      </div> <!--end of container-->
   </body>
 </html>
