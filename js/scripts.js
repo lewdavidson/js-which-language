@@ -9,19 +9,15 @@ $(document).ready(function(){
     var important = $("input:radio[name=important]:checked").val();
 
 
-    if (end === "front" && strokes === "broad" && platform === "app" && device === "ios" && important === "looks") {
+    if (end === "front" && strokes === "broad" || strokes === "narrow" && platform === "app"  || platform === "web" && device === "ios" && important === "looks") {
         $("#design").show();
     } else if (end === "back" && strokes === "broad" && platform === "web" || platform === "app" && device === "android" && important === "flex") {
         $("#java").show();
     } else if (end === "back" && strokes === "narrow" && platform === "web" && device === "ios" || device === "android" && important === "function") {
         $("#ruby").show();
     } else {
-     $("#confilict").show();
-   }
-
-
-
+     $("#conflict").show();
+    }
     event.preventDefault();
   });
-
 });
