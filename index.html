@@ -20,41 +20,45 @@
           <input id="name" class="form-control" type="text">
           <label for="frnt-or-bk">Which end seems best to you?</label>
           <select class="form-control" id="frnt-or-bk">
+            <option> -- select one -- </option>
             <option value="front">Front-End</option>
             <option value="back">Back-End</option>
           </select>
           <label for="strokes">Which would you prefer?</label>
           <select class="form-control" id="strokes">
+            <option> -- select one -- </option>
             <option value="broad">A broad-strokes skillset</option>
             <option value="narrow">A narrow, very specilized skillset</option>
           </select>
           <label for="platform">Do you prefer:</label>
           <select class="form-control" id="platform">
+            <option> -- select one -- </option>
             <option value="web">Web-based work</option>
             <option value="app">App-based work</option>
           </select>
           <label for="device">Do you use:</label>
           <select class="form-control" id="device">
+            <option> -- select one -- </option>
             <option value="android">Android</option>
             <option value="ios">iOS</option>
           </select>
           <div class="radio">
-            <p>Please choose the one that matters most to you:</p>
+            <p>Please choose the option that matters most to you:</p>
             <label>
             <input type="radio" name="important" value="looks">
-            Looks appealing, styled nicely.
+            Things look appealing, they are styled nicely.
             </label>
           </div>
           <div class="radio">
             <label>
             <input type="radio" name="important" value="function">
-            Functions intuitivley, works consistantly.
+            Things function logicaly, the pieces are consistant.
             </label>
           </div>
           <div class="radio">
             <label>
             <input type="radio" name="important" value="flex">
-            The language used is diverse and can be used for many things.
+            The tools used are diverse, and can be used for many things.
             </label>
           </div>
       </div>
@@ -63,19 +67,23 @@
       <div class="answers">
         <div id="design">
           <h2>CSS/Design</h2>
-          <p>You should study CSS and other Design Languages! Your preference for Front-End work that looks great would be perfect for it!</p>
+          <p>You should study CSS and other Design Languages <span class="your-name"></span>! Your preference for flexible Front-End work that looks great would be perfect for it!</p>
         </div>
         <div id="ruby">
           <h2>Ruby/Rails</h2>
-          <p>You should study Ruby/Rails! Your preference for back-end, highly functional and specialized programming would be the perfect mix for this.</p>
+          <p>You should study Ruby/Rails<span class="your-name"></span>! Your preference for back-end, highly functional and specialized programming would be the perfect mix for this.</p>
         </div>
         <div id="java">
           <h2>Java/Android</h2>
-          <p>You should study Java/Android! Your preference for back-end work with a high degree of flexibility, and your preference for stinky andriod devices make you ideal for Java.</p>
+          <p>You should study Java/Android<span class="your-name">!</span> Your preference for back-end work with a high degree of flexibility, and your preference for stinky andriod devices make you ideal for Java.</p>
+        </div>
+        <div id="either-or">
+          <h2>Java/Android OR CSS/Design</h2>
+          <p>You should study either Java/Android OR CSS/Design<span class="your-name">!</span> Your preference for back-end work with a high degree of flexibility and your focus on the look of things make you ideal for either Java or CSS. perhaps a little <a href= "https://www.epicodus.com/blog/what-programming-language-should-1i-learn/">light reading</a> can help point you in the right direction!</p>
         </div>
         <div id="conflict">
           <h2>Hmmm</h2>
-          <p>Looks like you could pursue a few things! Take a look at this <a href= "https://www.epicodus.com/blog/what-programming-language-should-1i-learn/">Epicodus page</a> to learn more about the different languages and to find out which path might be right for you!</p>
+          <p>Looks like you could pursue a few things! Take a look at this <a href= "https://www.epicodus.com/blog/what-programming-language-should-1i-learn/">Epicodus page</a> to learn more about the different languages and to find out which path might be right for you! We hope to see you soon<span class="your-name"></span>!</p>
         </div>
       </div>
     </div> <!--end of container-->

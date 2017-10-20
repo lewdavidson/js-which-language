@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $("form#which-lang").submit(function(event) {
-    var name = $("select#name").val();
+    var name = $("input#name").val();
     var end = $("select#frnt-or-bk").val();
     var strokes = $("select#strokes").val();
     var platform = $("select#platform").val();
@@ -15,9 +15,13 @@ $(document).ready(function(){
         $("#java").show();
     } else if (end === "back" && strokes === "narrow" && platform === "web" && device === "ios" || device === "android" && important === "function") {
         $("#ruby").show();
+    } else if (end === "back" || end === "front" && strokes === "broad" && platform === "web" || platform === "app" && device === "ios" || device === "android" && important === "flex" || important === "looks") {
+        $("#either-or").show();
     } else {
      $("#conflict").show();
     }
+
+    $(".your-name").text(name);
     event.preventDefault();
   });
 });

@@ -1,3 +1,15 @@
+
+(end === "back" || end === "front" && strokes === "narrow" || strokes === "broad" && platform === "web" || platform === "app" && device === "ios" || device === "android" && important === "flex" || important === "looks" || important === "function")
+
+
+
+
+
+
+
+
+
+
 /*
 var css = 0;
 var java = 0;
