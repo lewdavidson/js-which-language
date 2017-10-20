@@ -8,6 +8,9 @@ $(document).ready(function(){
     var device = $("select#device").val();
     var important = $("input:radio[name=important]:checked").val();
 
+    if (end === "front" && strokes === "broad" && platform === "web" || platfrom === "app" && device === "ios")
+
+    $("#design").show ()
 
     event.preventDefault();
   });
