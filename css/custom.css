@@ -1,3 +1,15 @@
-#design, #ruby, #java {
+#design, #ruby, #java, #conflict {
   display: none;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+label {
+  margin-top: 20px;
+}
+
+.radio {
+  margin-top: 20px;
 }
