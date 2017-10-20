@@ -9,6 +9,70 @@
     <title>Which Language Should I Learn?</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Which Programming Language is Right for ME?</h1>
+      <p>Fill out the survey below to determine which programming language might fit your prosonal style best. Don't forget to hit "submit" to generate your results!</p>
+      <form id="which-lang">
+        <div class="form-group">
+          <label for="name">Please enter your name:</label>
+          <input id="name" class="form-control" type="text">
 
+        <label for="frnt-or-bk">Which end seems best to you?</label>
+        <select class="form-control" id="frnt-or-bk">
+          <option>Front-End</option>
+          <option>Back-End</option>
+        </select>
+        <label for="strokes">Which would you prefer?</label>
+        <select class="form-control" id="strokes">
+          <option>A broad-strokes skillset</option>
+          <option>A narrow, very specilized skillset</option>
+        </select>
+        <label for="platform">Do you prefer:</label>
+        <select class="form-control" id="platform">
+          <option>Web-based work</option>
+          <option>App-based work</option>
+        </select>
+        <label for="device">Do you use:</label>
+        <select class="form-control" id="device">
+          <option>Android</option>
+          <option>iOS</option>
+        </select>
+        <div class="radio">
+          <p>Please choose the one that matters most to you:</p>
+          <label>
+          <input type="radio" name="important" value="looks">
+          Looks appealing, styled nicely.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+          <input type="radio" name="important" value="function">
+          Functions intuitivley, works consistantly.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+          <input type="radio" name="important" value="diverse">
+          The language used is diverse and can be used for many things.
+          </label>
+        </div>
+      </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+      <div class="answers">
+        <div id="design">
+          <h2>CSS/Design</h2>
+          <p>You should study CSS and other Design Languages!</p>
+        </div>
+        <div id="ruby">
+          <h2>Ruby/Rails</h2>
+          <p>You should study Ruby/Rails!</p>
+        </div>
+        <div id="java">
+          <h2>Java/Android</h2>
+          <p>You should study Java/Android!</p>
+        </div>
+      </div>
+    </div> <!--end of container-->
   </body>
 </html>
